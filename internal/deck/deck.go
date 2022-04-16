@@ -43,7 +43,7 @@ func Draw(deck []models.Card) (*models.Card, []models.Card, error) {
 	}
 	card := deck[0]
 	if len(deck) == 1 {
-		return &card, make([]models.Card, 0, 40), nil
+		return &card, make([]models.Card, 0), nil
 	}
 	deck = deck[1:]
 	return &card, deck, nil
